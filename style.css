@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: #111;
+    padding-bottom: 300px;
+}
+body :before{
+    content: 'Parallax';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 6em;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px #555;
+    /* -webkit-animation-name: calc(); */
+    color: aliceblue;
+}
+
+section h2{
+    color: aliceblue;
+    font-size: 4em;
+    margin-bottom: 20px;
+    margin-left: 200px;
+}
+
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+section .container{
+    position: relative;
+    width:1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+section .container .imgbox{
+        position: relative;
+        /* width: 00px;
+        height: 100px; */
+        overflow: hidden;
+        box-shadow: 0 25px 35px(0,0,0,1);
+}
+section .container .imgbox img{
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 600px;
+        height: 400px;
+        object-fit: cover;
+
+}
+section .container .content{
+    position: absolute;
+    right: 0;
+    margin-top: 200px;
+    margin-bottom: 40px;
+    padding: 40px;
+    background: #333;
+    z-index: 1;
+    max-width: 400px;
+    color: #fff;
+
+}
